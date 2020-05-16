@@ -1,0 +1,93 @@
+*{
+    font-family: 'BalsamiqSans-Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {   font-family: 'BalsamiqSans-Regular';   
+    src: url('../../Font/BalsamiqSans-Regular.ttf') format('truetype'); 
+}
+.cont{
+    display: grid;
+    grid-template-columns: 0.65fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.25fr;
+    grid-template-areas: 
+    "a a a a"
+    "b c c c"
+    "b c c c"
+    "d d d d";
+    width: 100%;
+    height: 100%;
+}
+.header{
+    grid-area: a;
+    background: #317B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px brown;
+}
+.sidebar{
+    grid-area: b;
+    background: #392A16;
+    border: solid 5px brown;
+}
+.main{
+    grid-area: c;
+    background: #2BA84A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px brown;
+}
+.footer{
+    grid-area: d;
+    background: #131200;
+    border: solid 5px brown;
+}
+h1{
+    font-size: 50px;
+    color: yellow;
+}
+.tabelka, td, th{
+    border: solid 4px brown;
+    background: orange;
+}
+
+
+
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.kwadrat {
+    position: relative;
+    display: flex;
+    background: orange;
+    width: 120px;
+    height: 60px;
+    list-style-type: none;
+    align-self: center;
+    margin: 10px;
+}
+.ty{
+    display: none;
+    position: absolute;
+    width: 65px;
+    height: 170px;
+    background: white;
+    left: 120px;
+    flex-direction: column;
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.kwadrat:hover .ty{
+    display: block;
+    animation: animacja3 2s 1;
+    color: black;
+}
